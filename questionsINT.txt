@@ -1,0 +1,97 @@
+1)Core Java -> Collections, Basic Threading, Object Oriented Programming
+2)Spring MVC, How MVC works in Spring, Handlers, Adapters etc
+3)Spring REST API’s
+4)Swagger
+5)Spring Security / JWS
+6)Access Specifiers: public, private, protected ?
+7)Book and Author scenario and relationship ?
+   A: Book table and author Table , authorID is the reference in Book table
+8)Junit test cases ?
+9)Agile process ?
+10)Spring Boot, Spring Hibernate Integration ?
+11)Singleton usage ?
+12)Design patterns ?
+13)Spring MVC architecture flow and navigation from UI to Backend ?
+14)Handlers, Mappings
+15)Database SQL commands (DDL, DML etc…)
+16)SQL Joins ?
+ 
+***************
+1.Private, Protected and Public
+a.Private - only by member methods
+b.Protected - available within Package
+     i.Also accessible by subclasses
+c.Public - accessible within Package and also by other classes
+2.Polymorphism
+a.Overloading and Overwriting
+3.Big O notation
+a.Hashmap, ArrayList and …
+    i.Pick 2 and we will go with it
+    ii.Which one of the above will provide the fastest insert?
+1.ArrayList is faster because we will have the index
+2.Hashmap - Index not available
+      iii. ArrayList will take longer to expand because it ArrayList it doubles the size and has to rearrange itself since it is a sorted ArrayList as was told before
+b.What is the underlying implementation of a Hashamp?
+4.Singleton class - login()
+a.Is there something that we should do special to make sure counts are not double counted?
+    i. "Synchronized"
+5.Multi-threading - describe Dead Lock
+a.Dead Lock occurs when multiple threads are waiting on each other for the same resource to release the lock so that they can proceed with their processing
+b.SM - used JProfiler to identify dead locked threads
+6.What will you do to avoid Dead Lock?
+a.May use some kind of queues to avoid locks and introduce Asynchronous mechanisms
+7.An application needs a login() mechanism and login credentials are in a DB.  Choose technology stack that you will be comfortable with
+a.Angular with RESTful services
+b.Tell me what solution components should be there to achieve this design
+        i. Starting from DB - ensure that there is an optimally normalized DB
+        ii  Use JPA framework (something for ORM)
+8.Normalized vs. De-normalized DBs
+9.Customer Table and Contact Table - what join will you use
+a.will assume Customer_ID as the key
+b.Assume multiple with Contact information for the same customer and multiple e-mail IDs
+c.Will join using Customer_ID
+10.   Inner Join vs. Outer Join
+11.   Any work on Stored Procedures and Packages?
+a.      Yes
+b.      Package compares to a Java Package
+c.      Procedure - does not have a return value
+d.      Function - has a return value
+12.   What can be done in a stored procedure that cannot be done in a SQL function
+a.      Procedure can use something like Cursors
+b.      SQL function does not have such constructs
+13.   DML vs DDL
+14.   How many people have you led?
+a.      30 off-shore team members and 4-5 on-shore team members
+15.   Code Review steps
+a.      Format code (make it readable)
+b.      Check for hard-coded stuff
+        i.Move them to static variables
+c.      Check for variables that are not used at all
+         i.Use SonarQube for code quality
+         ii. Set all rules for code quality check in XML file
+d.      One can right click in Eclipse and create a task for the developer to fix it restricting the developer from progressing without fixing the defect
+16.   Other code quality checks
+a.      Non-functional
+b.      Use Prepared Statements to avoid SQL Injection errors
+c.      Test for performance when using BLOB objects etc
+17.   Spring Batch
+18.   Drools vs. Blaze (Basic skills only)
+a.      Drools - current version is much better than what it was before
+b.      DRLs
+ 
+***************
+ 
+1. Normal introduction.
+2. versions used, code reviews, coding best practices.
+3. How we write the reusable code to be used in other places in application with example.
+4. Roles & Responsibilities of previous projects
+5. Do you have any experience in Angular JS.(i said didn't get a chance to work on it.mostly worked on JSP,HTML,Normal Javascript , now i get a chance will definitely work on it.)
+6. How you learn new technologies from internet or from books? (Tutorials point , best practices in market and difference between the previous version and current version etc )
+7. Do you have experience in Data Base.(Most of the time i worked on Hibernate , i have experience in writing the joining queries and all.)
+     Asked some join queries , did not ask any hibernate related questions
+8. If i am trying to use a same object for multiple requests what will happen?
+9. If the primitive data type is using for multiple requests what will happen?
+10.How marshaling and unmarshaling happening?
+11.How XML object converted to Java Object?
+12.How you accessed the legacy database?
+13.Do you have any questions from us.
